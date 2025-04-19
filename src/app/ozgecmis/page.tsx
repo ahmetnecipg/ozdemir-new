@@ -61,10 +61,10 @@ export default function OzgecmisPage() {
             <div className="bg-white shadow-lg rounded-lg p-8 mb-8 border border-gray-100">
               <h2 className="text-3xl font-semibold text-gray-900 mb-6">Kişisel Bilgiler</h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                Dr. Ömer Özdemir 1999 yılında İstanbul Üsküdar'da ailesinin ilk çocuğu olarak dünyaya geldi. İlkokulu İstanbul Altunizade Hafize Özal İlkokulunda, liseyi İstanbul Ümraniye Lisesinde tamamladı. Lise mezuniyetinin hemen ardından İstanbul Üniversitesi Diş Hekimliği Fakültesi'ni kazandı.
+                Dr. Ömer Özdemir 1999 yılında İstanbul Üsküdar&apos;da ailesinin ilk çocuğu olarak dünyaya geldi. İlkokulu İstanbul Altunizade Hafize Özal İlkokulunda, liseyi İstanbul Ümraniye Lisesinde tamamladı. Lise mezuniyetinin hemen ardından İstanbul Üniversitesi Diş Hekimliği Fakültesi&apos;ni kazandı.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Üniversite öğrenimi sırasında ikinci üniversite olarak kendi üniversitesinin farklı bir bölümü olan Sağlık Kurumları İşletmeciliği bölümünü bitirdi. Lisans eğitimini onur derecesi ile tamamladıktan sonra aynı yıl içerisinde aynı fakültede Pedodonti (Çocuk Diş Hekimliği) Ana bilim Dalı'nda doktora eğitimine başladı ve halen araştırmalarını sürdürmektedir.
+                Üniversite öğrenimi sırasında ikinci üniversite olarak kendi üniversitesinin farklı bir bölümü olan Sağlık Kurumları İşletmeciliği bölümünü bitirdi. Lisans eğitimini onur derecesi ile tamamladıktan sonra aynı yıl içerisinde aynı fakültede Pedodonti (Çocuk Diş Hekimliği) Ana bilim Dalı&apos;nda doktora eğitimine başladı ve halen araştırmalarını sürdürmektedir.
               </p>
             </div>
             
@@ -143,14 +143,14 @@ export default function OzgecmisPage() {
                 <div className="font-semibold text-xl">TİKA - Gönüllü Elçi</div>
                 <div className="text-gray-600 text-lg">Zanzibar, Tanzanya</div>
                 <p className="text-lg text-gray-700 mt-2">
-                  2018 yılında Türk İşbirliği ve Koordinasyon Ajansı (TİKA) tarafından gönüllü elçi seçilerek Assalam Community Foundation ile Zanzibar'da yaşayan kadın ve çocuklara sağlık servisi ve diş hekimliği alanında hizmet ve yardımlar sağlamıştır.
+                  2018 yılında Türk İşbirliği ve Koordinasyon Ajansı (TİKA) tarafından gönüllü elçi seçilerek Assalam Community Foundation ile Zanzibar&apos;da yaşayan kadın ve çocuklara sağlık servisi ve diş hekimliği alanında hizmet ve yardımlar sağlamıştır.
                 </p>
               </li>
               <li className="border-l-4 border-blue-600 pl-6">
                 <div className="font-semibold text-xl">Volunteers of Turkish Derneği</div>
                 <div className="text-gray-600 text-lg">Nijer</div>
                 <p className="text-lg text-gray-700 mt-2">
-                  Volunteers of Turkish Derneği ile Nijer'de sağlık hizmetleri ve cerrahi diş hekimliği alanında gönüllü olarak hizmet vermiştir.
+                  Volunteers of Turkish Derneği ile Nijer&apos;de sağlık hizmetleri ve cerrahi diş hekimliği alanında gönüllü olarak hizmet vermiştir.
                 </p>
               </li>
             </ul>

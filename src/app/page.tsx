@@ -25,7 +25,7 @@ export default function Home() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600 mb-3">Çocuk Diş Doktorunuz</h1>
-            <p className="text-xl md:text-2xl text-purple-600 font-medium">Dr. Ömer Özdemir'in Renkli Dünyasına Hoş Geldiniz!</p>
+            <p className="text-xl md:text-2xl text-purple-600 font-medium">Dr. Ömer Özdemir&apos;in Renkli Dünyasına Hoş Geldiniz!</p>
           </div>
           
           <div className="bg-white rounded-3xl shadow-lg overflow-hidden mb-12 transform hover:scale-[1.01] transition-transform duration-300 relative">
@@ -50,7 +50,7 @@ export default function Home() {
                   Ben, çocukların diş doktoru olarak dişlerinizi sağlıklı ve güçlü tutmak için buradayım! Gülüşünüzü daha parlak yapmak benim en sevdiğim iş.
                 </p>
                 <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                  İstanbul Üniversitesi Diş Hekimliği Fakültesi'nden mezun oldum ve şimdi çocukların dişlerini tedavi etmek için özel eğitim alıyorum.
+                  İstanbul Üniversitesi Diş Hekimliği Fakültesi&apos;nden mezun oldum ve şimdi çocukların dişlerini tedavi etmek için özel eğitim alıyorum.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   Size en modern ve konforlu tedavileri sunmak için sürekli kendimi geliştiriyorum.
@@ -76,7 +76,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold text-yellow-600">Dünyayı Gezdim!</h2>
               </div>
               <p className="text-lg text-gray-700 mb-4">
-                Nijer ve Zanzibar'da gönüllü olarak çalıştım. Oradaki çocuklara diş bakımı konusunda yardım ettim.
+                Nijer ve Zanzibar&apos;da gönüllü olarak çalıştım. Oradaki çocuklara diş bakımı konusunda yardım ettim.
               </p>
               <p className="text-lg text-gray-700">
                 Türk İşaret Dili ve Japonca biliyorum, böylece daha çok çocukla iletişim kurabiliyorum!
