@@ -2,7 +2,6 @@
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import Image from 'next/image';
 import { useState } from 'react';
 
 // Renk tipleri için tip tanımı
@@ -169,7 +168,7 @@ export default function Tedaviler() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-3">Çocuklar İçin Diş Tedavileri</h1>
-            <p className="text-xl text-gray-600">Dr. Ömer Özdemir'in uzman olduğu diş tedavi yöntemleri</p>
+            <p className="text-xl text-gray-600">Dr. Ömer Özdemir&apos;in uzman olduğu diş tedavi yöntemleri</p>
           </div>
 
           {/* Tedavi Seçenekleri - Tablet/Masaüstü Görünümü */}
