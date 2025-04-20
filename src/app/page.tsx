@@ -132,7 +132,7 @@ export default function Home() {
                 <ul className="text-lg text-gray-700 space-y-3">
                   <li className="flex items-center">
                     <span className="text-blue-500 text-xl mr-3">📱</span>
-                    <span>Telefon: (123) 456-7890</span>
+                    <span>Telefon: 05538885444</span>
                   </li>
                   <li className="flex items-center">
                     <span className="text-blue-500 text-xl mr-3">✉️</span>
@@ -140,7 +140,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-center">
                     <span className="text-blue-500 text-xl mr-3">🏥</span>
-                    <span>Adres: Diş Caddesi No: 123, Şehir, Türkiye</span>
+                    <span>Adres: Osmaniye, Ümraniye Sk. No:2/B, 34146 Bakırköy/İstanbul</span>
                   </li>
                 </ul>
               </div>

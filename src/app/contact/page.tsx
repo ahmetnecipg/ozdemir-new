@@ -21,7 +21,7 @@ export default function ContactPage() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold text-gray-900">Adres</h3>
-                  <p className="text-gray-600">Diş Caddesi No: 123<br />Şehir, Türkiye</p>
+                  <p className="text-gray-600">Osmaniye, Ümraniye Sk. No:2/B<br />34146 Bakırköy/İstanbul</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -32,7 +32,7 @@ export default function ContactPage() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold text-gray-900">Telefon</h3>
-                  <p className="text-gray-600">(123) 456-7890</p>
+                  <p className="text-gray-600">05538885444</p>
                 </div>
               </div>
               <div className="flex items-start">

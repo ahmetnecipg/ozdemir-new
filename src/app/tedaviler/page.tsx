@@ -2,7 +2,8 @@
 
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { useState } from 'react';
+import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 // Renk tipleri için tip tanımı
 type ColorType = 'blue' | 'purple' | 'yellow' | 'red' | 'green' | 'teal' | 'pink';
@@ -28,8 +29,8 @@ const treatmentData: Treatment[] = [
     
     Unutulmamalıdır ki her çocuğun diş ve çene yapısı farklıdır ve ihtiyaçları bireysel olarak değerlendirilmelidir. Çocuğunuzun ortodontik tedaviye ihtiyacı olup olmadığını belirlemek için düzenli diş hekimi kontrolleri önemlidir.
     
-    Sonuç olarak, çocukların ortodontik apareyler ve tedavileri, düzgün bir diş ve çene yapısı elde etmelerine yardımcı olabilir. Erken yaşlarda başlatılan tedaviler, çocuğunuzun gülümsemesinin ve genel ağız sağlığının ilerleyen yıllarda da güzel olmasına katkıda bulunabilir.`,
-    image: '/ortodonti.jpg'
+    Sonuç olarak, çocukların ortodontik apareyler ve tedavileri, düzgün bir diş ve çene yapısı elde etmelerine yardımcı olabilir. Erken yaşlarda başlatılan tedaviler, çocuğunuzun gülümsemesinin ve genel ağz sağlığının ilerleyen yıllarda da güzel olmasına katkıda bulunabilir.`,
+    image: '/apareys.png'
   },
   {
     id: 'kanal',
@@ -41,7 +42,7 @@ const treatmentData: Treatment[] = [
     Kanal tedavisi, dişin kaybedilmesini önlemeye ve çocuğun ağzındaki doğal dişin korunmasına yardımcı olur. Tedavi, diş ağrısını azaltır, enfeksiyonu kontrol altına alır ve dişin sağlıklı bir şekilde kullanılmasını sağlar.
     
     Çocuklarda kanal tedavisi uzmanlık gerektiren hassas bir konudur. Kalıcı dişler gibi köklü dişler olan süt dişlerindeki çürüklerin ilerlemesi; gece ağrısı, soğuğa karşı hassasiyet ve şişlik gibi sorunlara neden olabilir. Bu gibi durumlarda süt dişlerine kanal tedavisi önerilmektedir.`,
-    image: '/kanal.jpg'
+    image: '/kanal.png'
   },
   {
     id: 'curuk',
@@ -56,7 +57,7 @@ const treatmentData: Treatment[] = [
     • Diş Ağrısı ve Hassasiyet: Çürükler dişin hassas kısımlarına ulaştığında, ağrı ve hassasiyet hissedilebilir.
     • Çürüklerin İlerlemesi: Tedavi edilmediğinde çürükler dişin içine ilerleyerek dişin pulpasını etkileyebilir ve enfeksiyonlara yol açabilir.
     • Diş Kaybı: İleri düzeydeki çürükler, dişi kaybetmeye ve boşluğun doldurulması için diş protezi veya implant gibi tedavilere ihtiyaç duyulmasına neden olabilir.`,
-    image: '/curuk.jpg'
+    image: '/curuk.png'
   },
   {
     id: 'travma',
@@ -66,7 +67,7 @@ const treatmentData: Treatment[] = [
     content: `Çocuklarda diş travmaları, oyuncak kazaları, spor aktiviteleri veya düşmeler gibi necedenlerle sıkça görülebilir. Diş travmaları, dişlerin kırılması, çıkması veya yerinden oynaması gibi çeşitli şekillerde ortaya çıkabilir.
     
     Diş travmalarında erken müdahale ve profesyonel tedavi, dişlerin sağlıklı ve doğal bir şekilde korunmasına yardımcı olur. Travmaya karşı koruyucu dişlikler kullanmak, çocukların dişlerini spor aktiviteleri sırasında korumak için önemlidir.`,
-    image: '/travma.jpg'
+    image: '/travma.png'
   },
   {
     id: 'cekim',
@@ -76,7 +77,7 @@ const treatmentData: Treatment[] = [
     content: `Çocuklarda da erişkinlerde olduğu gibi süt ya da daimi dişleri çekilebilir. Daimi dişleri ortodontik karar ya da aşırı harabiyet durumu gibi ender durumlarda çekmekteyiz. Bu cerrahiler, çocukların diş sağlığını korumak ve gelecekte olası problemleri önlemek için uygulanabilir.
     
     Çocuklarda diş çekim işlemleri çocukların psikolojileri düşünülerek onları tedirgin etmeden yapılmaktadır. Diş çekimleri lokal anestezi altında yapılmaktadır. Süt dişlerinin aşırı sallandığı durumlarda topikal anestezik spreyle de uyuşturularak basitçe süt dişini çekebilmekteyiz.`,
-    image: '/cekim.jpg'
+    image: '/discekimi.png'
   },
   {
     id: 'anestezi',
@@ -88,7 +89,7 @@ const treatmentData: Treatment[] = [
     Genel anestezi, çocuğun bilincinin geçici olarak kapatılmasını ve uykuya daldırılmasını sağlayan bir tür anestezi yöntemidir. Bu işlem, ağız ve diş sağlığı için daha kapsamlı ve uzun süreli tedavilere ihtiyaç duyulan durumlarda uygulanır.
     
     Sedasyon, çocuğun sakinleşmesini ve anksiyetesini azaltmak için kullanılan hafif anestezi birimidir. Çocuğun bilinci hafifçe etkilenir, ancak çocuk bilinçli bir şekilde nefes alma ve tepki verme yeteneğini korur.`,
-    image: '/anestezi.jpg'
+    image: '/kanal.png'
   },
   {
     id: 'gicirdatma',
@@ -100,15 +101,26 @@ const treatmentData: Treatment[] = [
     Çoğu durumda, çocukların farkında olmadan gece uykuları sırasında gerçekleşir. Ancak bazı çocuklar, stresli veya gergin anlarda da diş gıcırdatma eğilimi gösterebilir. Diş gıcırdatma genellikle aileler tarafından fark edilir; çünkü uyku esnasında yüksek sesli gıcırdatma sesleri veya diş sıkma izleri gözlemlenebilir.
     
     Çocuğunuzda diş gıcırdatma belirtileri fark ederseniz, bir pedodontiste (çocuk diş hekimi) danışmanız önemlidir. Çocuğun durumunu değerlendirerek uygun tedavi yöntemini belirleyecektir.`,
-    image: '/gicirdatma.jpg'
+    image: '/apareys.png'
   }
 ];
 
 export default function Tedaviler() {
   const [activeTab, setActiveTab] = useState<string>('ortodonti');
+  const [imageError, setImageError] = useState<Record<string, boolean>>({});
 
   // Aktif tedavi verilerini al
   const activeTreatment = treatmentData.find(treatment => treatment.id === activeTab);
+
+  // Image error handler
+  const handleImageError = (id: string) => {
+    setImageError(prev => ({ ...prev, [id]: true }));
+  };
+
+  // Reset image error when tab changes
+  useEffect(() => {
+    setImageError({});
+  }, [activeTab]);
 
   // Renkle ilgili sınıf tanımları
   const colorClasses: Record<ColorType, {
@@ -210,14 +222,27 @@ export default function Tedaviler() {
               <div className="md:flex">
                 {/* Tedavi Resmi */}
                 <div className="md:w-2/5 h-64 md:h-auto relative">
-                  <div className="absolute inset-0 bg-gray-100 flex items-center justify-center">
-                    <div className="text-8xl">{activeTreatment.icon}</div>
+                  <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+                    {imageError[activeTreatment.id] ? (
+                      <div className="w-full h-full bg-gray-100 flex items-center justify-center">
+                        <div className="text-8xl">{activeTreatment.icon}</div>
+                      </div>
+                    ) : (
+                      <Image 
+                        src={activeTreatment.image} 
+                        alt={activeTreatment.title}
+                        fill
+                        style={{ objectFit: 'cover' }}
+                        onError={() => handleImageError(activeTreatment.id)}
+                      />
+                    )}
                   </div>
                 </div>
                 
                 {/* Tedavi Bilgileri */}
                 <div className="p-8 md:w-3/5">
                   <div className={`inline-block px-3 py-1 rounded-full text-xs font-semibold ${colorClasses[activeTreatment.color].light} ${colorClasses[activeTreatment.color].text} mb-4`}>
+                    <span className="mr-2">{activeTreatment.icon}</span>
                     Çocuk Diş Tedavisi
                   </div>
                   <h2 className={`text-3xl font-bold ${colorClasses[activeTreatment.color].text} mb-6`}>
