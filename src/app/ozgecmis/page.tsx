@@ -11,12 +11,12 @@ export default function OzgecmisPage() {
         
         <div className="md:flex mb-16 gap-10 items-start">
             <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100 h-full flex flex-col">
-              <div className="relative h-[400px]">
+              <div className="relative h-[550px] bg-gray-50">
                 <Image 
                   src="/drphoto.jpg" 
                   alt="Dr. Ömer Özdemir" 
                   fill 
-                  style={{ objectFit: 'cover' }} 
+                  style={{ objectFit: 'contain' }} 
                   className="rounded-t-lg" 
                 />
               </div>
@@ -61,7 +61,7 @@ export default function OzgecmisPage() {
             <div className="bg-white shadow-lg rounded-lg p-8 mb-8 border border-gray-100">
               <h2 className="text-3xl font-semibold text-gray-900 mb-6">Kişisel Bilgiler</h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                Dr. Ömer Özdemir 1999 yılında İstanbul Üsküdar&apos;da ailesinin ilk çocuğu olarak dünyaya geldi. İlkokulu İstanbul Altunizade Hafize Özal İlkokulunda, liseyi İstanbul Ümraniye Lisesinde tamamladı. Lise mezuniyetinin hemen ardından İstanbul Üniversitesi Diş Hekimliği Fakültesi&apos;ni kazandı.
+                Dr. Ömer Özdemir 1999 yılında İstanbul Üsküdar&apos;da ailesinin ilk çocuğu olarak dünyaya geldi. İlkokulu İstanbul Altunizade Hafize Özal İlkokulunda, liseyi İstanbul Ümraniye Anadolu Lisesinde tamamladı. Lise mezuniyetinin hemen ardından İstanbul Üniversitesi Diş Hekimliği Fakültesi&apos;ni kazandı.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Üniversite öğrenimi sırasında ikinci üniversite olarak kendi üniversitesinin farklı bir bölümü olan Sağlık Kurumları İşletmeciliği bölümünü bitirdi. Lisans eğitimini onur derecesi ile tamamladıktan sonra aynı yıl içerisinde aynı fakültede Pedodonti (Çocuk Diş Hekimliği) Ana bilim Dalı&apos;nda doktora eğitimine başladı ve halen araştırmalarını sürdürmektedir.
@@ -139,6 +139,13 @@ export default function OzgecmisPage() {
           <div className="bg-white shadow-lg rounded-lg p-8 border border-gray-100">
             <h2 className="text-3xl font-semibold text-gray-900 mb-6">Uluslararası Deneyimler</h2>
             <ul className="space-y-6">
+              <li className="border-l-4 border-blue-600 pl-6 pb-6">
+                <div className="font-semibold text-xl">Erasmus+ Staj Programı</div>
+                <div className="text-gray-600 text-lg">Whitecenter Belgie, Belçika</div>
+                <p className="text-lg text-gray-700 mt-2">
+                  Mayıs-Ağustos 2023 tarihleri arasında Erasmus+ Staj Programı kapsamında Belçika&apos;nın Gent şehrinde bulunan Whitecenter Belgie&apos;de staj gerçekleştirmiştir. Bu süreçte uluslararası hastaların dental tedavileri konusunda önemli deneyimler kazanmıştır.
+                </p>
+              </li>
               <li className="border-l-4 border-blue-600 pl-6 pb-6">
                 <div className="font-semibold text-xl">TİKA - Gönüllü Elçi</div>
                 <div className="text-gray-600 text-lg">Zanzibar, Tanzanya</div>

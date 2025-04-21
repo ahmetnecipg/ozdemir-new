@@ -35,25 +35,25 @@ export default function Home() {
             </div>
             
             <div className="md:flex">
-              <div className="md:w-1/2 h-96 md:h-auto relative">
+              <div className="md:w-1/2 h-[500px] md:h-[650px] relative">
                 <Image 
                   src="/drphoto.jpg" 
                   alt="Dr. Ömer Özdemir" 
                   fill 
-                  style={{ objectFit: 'cover' }} 
+                  style={{ objectFit: 'contain' }} 
                   className="rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none" 
                 />
               </div>
               <div className="p-8 md:w-1/2 md:p-10">
                 <h2 className="text-3xl font-bold text-teal-600 mb-6">Merhaba, Ben Dr. Ömer!</h2>
                 <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                  Ben, çocukların diş doktoru olarak dişlerinizi sağlıklı ve güçlü tutmak için buradayım! Gülüşünüzü daha parlak yapmak benim en sevdiğim iş.
+                  Çocukların sağlıklı ve mutlu gülümsemeleri için çalışan bir çocuk diş hekimiyim. Diş tedavisini korkulan bir şey değil, eğlenceli bir deneyime dönüştürmek en sevdiğim şey!
                 </p>
                 <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                  İstanbul Üniversitesi Diş Hekimliği Fakültesi&apos;nden mezun oldum ve şimdi çocukların dişlerini tedavi etmek için özel eğitim alıyorum.
+                  İstanbul Üniversitesi Diş Hekimliği Fakültesi&apos;nden mezun oldum. Şu anda Pedodonti (çocuk diş hekimliği) alanında doktora yapıyor ve çocuklara özel tedaviler konusunda uzmanlaşıyorum.
                 </p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Size en modern ve konforlu tedavileri sunmak için sürekli kendimi geliştiriyorum.
+                  Bilimi, deneyimi ve çocuklarla güçlü iletişimi birleştirerek; onların diş sağlığına en konforlu, modern ve güvenli çözümleri sunmak için her gün kendimi geliştirmeye devam ediyorum.
                 </p>
               </div>
             </div>
@@ -65,22 +65,32 @@ export default function Home() {
               <Image src="/7.jpg" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
             </div>
             
-            <div className="bg-yellow-50 rounded-3xl p-8 shadow-md border-2 border-yellow-200 relative">
+            <div className="bg-blue-50 rounded-3xl p-8 shadow-md border-2 border-blue-200 relative overflow-hidden">
               {/* Sol üst anime karakteri */}
               <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full overflow-hidden z-20 transform -rotate-6 shadow-lg">
                 <Image src="/8.jpeg" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
               </div>
               
-              <div className="flex items-center mb-6">
-                <span className="text-yellow-500 text-5xl mr-3">🌍</span>
-                <h2 className="text-3xl font-bold text-yellow-600">Dünyayı Gezdim!</h2>
+              <div className="relative z-10">
+                <div className="flex items-center mb-6">
+                  <span className="text-blue-500 text-5xl mr-3">🌎</span>
+                  <h2 className="text-3xl font-bold text-blue-600">Uluslararası Deneyim</h2>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-xl font-semibold text-blue-600">Whitecenter Belgie - Erasmus+ Stajı</h3>
+                    <p className="text-gray-600">Haziran 2024 – Eylül 2024 | Genk, Belçika</p>
+                    <p className="text-lg text-gray-700 mt-2">
+                      Belçika&apos;daki diş hekimliği uygulamalarına dair kapsamlı bir bakış açısı kazanıldı. Diş hekimliğinin Avrupa standartlarında nasıl yapıldığı tecrübe edildi.
+                    </p>
+                  </div>
+                </div>
               </div>
-              <p className="text-lg text-gray-700 mb-4">
-                Nijer ve Zanzibar&apos;da gönüllü olarak çalıştım. Oradaki çocuklara diş bakımı konusunda yardım ettim.
-              </p>
-              <p className="text-lg text-gray-700">
-                Türk İşaret Dili ve Japonca biliyorum, böylece daha çok çocukla iletişim kurabiliyorum!
-              </p>
+              
+              {/* Background anime image */}
+              <div className="absolute right-0 bottom-0 w-48 h-48 opacity-20">
+                <Image src="/ghibli.jpg" alt="Anime illustration" width={200} height={200} style={{ objectFit: 'contain' }} />
+              </div>
             </div>
             
             <div className="bg-green-50 rounded-3xl p-8 shadow-md border-2 border-green-200 relative">
@@ -95,20 +105,24 @@ export default function Home() {
               </div>
               <ul className="text-lg text-gray-700 space-y-3">
                 <li className="flex items-start">
-                  <span className="text-green-500 text-xl mr-3">✓</span>
-                  <span>Ağrısız ve eğlenceli diş tedavileri</span>
+                  <span className="text-green-500 text-xl mr-3">🎈</span>
+                  <span>Ağrısız ve çocuk dostu diş tedavileri</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-500 text-xl mr-3">✓</span>
-                  <span>Dijital diş hekimliği uygulamaları</span>
+                  <span className="text-green-500 text-xl mr-3">🖥️</span>
+                  <span>Dijital teknolojiyle desteklenen modern uygulamalar</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-500 text-xl mr-3">✓</span>
-                  <span>Koruyucu diş tedavileri</span>
+                  <span className="text-green-500 text-xl mr-3">🛡️</span>
+                  <span>Çürükleri önlemeye yönelik koruyucu tedaviler</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-green-500 text-xl mr-3">✓</span>
-                  <span>Dişlerde yaralanma tedavileri</span>
+                  <span className="text-green-500 text-xl mr-3">🚑</span>
+                  <span>Düşme ve çarpmalarda diş travması tedavileri</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="text-green-500 text-xl mr-3">😴</span>
+                  <span>Genel anestezi ve sedasyon altında diş tedavileri</span>
                 </li>
               </ul>
             </div>

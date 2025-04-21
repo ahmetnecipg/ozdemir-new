@@ -21,52 +21,33 @@ interface Treatment {
 // Tedavi bilgileri
 const treatmentData: Treatment[] = [
   {
-    id: 'ortodonti',
-    title: 'Çocuklar İçin Ortodontik Apareyler ve Tedavileri',
-    icon: '🦷',
-    color: 'blue',
-    content: `Ortodontik tedavilerin çocuklar için erken yaşlarda başlatılması genellikle daha iyi sonuçlar elde edilmesini sağlar. Çünkü çocukların çene yapısı henüz gelişme sürecindedir ve dişler daha esnektir. Erken müdahale, daha ciddi problemlerin önüne geçmeye ve daha kısa tedavi süreleriyle sonuçlanmaya yardımcı olabilir.
-    
-    Unutulmamalıdır ki her çocuğun diş ve çene yapısı farklıdır ve ihtiyaçları bireysel olarak değerlendirilmelidir. Çocuğunuzun ortodontik tedaviye ihtiyacı olup olmadığını belirlemek için düzenli diş hekimi kontrolleri önemlidir.
-    
-    Sonuç olarak, çocukların ortodontik apareyler ve tedavileri, düzgün bir diş ve çene yapısı elde etmelerine yardımcı olabilir. Erken yaşlarda başlatılan tedaviler, çocuğunuzun gülümsemesinin ve genel ağz sağlığının ilerleyen yıllarda da güzel olmasına katkıda bulunabilir.`,
-    image: '/apareys.png'
+    id: 'curuk',
+    title: 'Çocuklarda Diş Çürükleri',
+    icon: '🍭',
+    color: 'yellow',
+    content: `Çocukluk çağı çürükleri, erken yaşta başlayan ve hızla ilerleyebilen yaygın bir sorundur. Düzenli kontroller, doğru beslenme ve koruyucu uygulamalarla çürükleri önlemek mümkün! Tedavide ise hem estetik hem de dayanıklı dolgu materyalleri tercih edilir.
+
+📌 Minik çürükler, büyük sorunlara dönüşmeden çözüme kavuşsun.`,
+    image: '/curuk.png'
   },
   {
     id: 'kanal',
     title: 'Çocuklarda Uygulanan Kanal Tedavisi',
     icon: '🔍',
     color: 'purple',
-    content: `Çocuklarda kanal tedavisi, dişteki aşırı çürük, travma veya enfeksiyon gibi durumlar nedeniyle hasar görmüş dişin tedavisinde kullanılan bir yöntemdir. Bu tedavi, dişin iç kısmındaki yumuşak doku ve sinirleri temizlemeyi, dezenfekte etmeyi ve dolgu malzemesiyle doldurmayı içerir.
-    
-    Kanal tedavisi, dişin kaybedilmesini önlemeye ve çocuğun ağzındaki doğal dişin korunmasına yardımcı olur. Tedavi, diş ağrısını azaltır, enfeksiyonu kontrol altına alır ve dişin sağlıklı bir şekilde kullanılmasını sağlar.
-    
-    Çocuklarda kanal tedavisi uzmanlık gerektiren hassas bir konudur. Kalıcı dişler gibi köklü dişler olan süt dişlerindeki çürüklerin ilerlemesi; gece ağrısı, soğuğa karşı hassasiyet ve şişlik gibi sorunlara neden olabilir. Bu gibi durumlarda süt dişlerine kanal tedavisi önerilmektedir.`,
+    content: `Süt dişlerinde veya genç daimi dişlerde oluşan derin çürüklerde, dişin çekilmeden tedavi edilmesi için kanal tedavisi gerekebilir. Çocuklara özel tekniklerle yapılan bu işlem, dişin ağızda kalmasını ve işlevini sürdürmesini sağlar.
+
+📌 Diş kaybını değil, dişin geleceğini planlıyoruz`,
     image: '/kanal.png'
-  },
-  {
-    id: 'curuk',
-    title: 'Çocuklarda Diş Çürükleri',
-    icon: '🍭',
-    color: 'yellow',
-    content: `Çocuklarda diş çürükleri, çocukluk çağının en yaygın ve önemli diş sağlığı sorunlarından biridir. Diş çürükleri, şekerli yiyeceklerin bakteriler tarafından metabolize edilmesi sonucu oluşan asitlerin diş minesini çözmesiyle başlar. Bu süreç, zaman içinde dişin minesinin zayıflamasına ve çürük oluşumuna yol açar.
-    
-    Çocukların diş çürüklerine yatkınlığı, beslenme alışkanlıkları, diş hijyeni düzeni ve genetik faktörler gibi çeşitli etmenlere bağlıdır. Şekerli içeceklerin ve atıştırmalıkların aşırı tüketimi, diş çürükleri riskini artırır.
-    
-    Çocuklarda diş çürüklerinin etkileri şunlardır:
-    • Diş Ağrısı ve Hassasiyet: Çürükler dişin hassas kısımlarına ulaştığında, ağrı ve hassasiyet hissedilebilir.
-    • Çürüklerin İlerlemesi: Tedavi edilmediğinde çürükler dişin içine ilerleyerek dişin pulpasını etkileyebilir ve enfeksiyonlara yol açabilir.
-    • Diş Kaybı: İleri düzeydeki çürükler, dişi kaybetmeye ve boşluğun doldurulması için diş protezi veya implant gibi tedavilere ihtiyaç duyulmasına neden olabilir.`,
-    image: '/curuk.png'
   },
   {
     id: 'travma',
     title: 'Çocuklarda Görülen Diş Travmaları ve Tedavileri',
     icon: '⚠️',
     color: 'red',
-    content: `Çocuklarda diş travmaları, oyuncak kazaları, spor aktiviteleri veya düşmeler gibi necedenlerle sıkça görülebilir. Diş travmaları, dişlerin kırılması, çıkması veya yerinden oynaması gibi çeşitli şekillerde ortaya çıkabilir.
-    
-    Diş travmalarında erken müdahale ve profesyonel tedavi, dişlerin sağlıklı ve doğal bir şekilde korunmasına yardımcı olur. Travmaya karşı koruyucu dişlikler kullanmak, çocukların dişlerini spor aktiviteleri sırasında korumak için önemlidir.`,
+    content: `Düşme, çarpma gibi kazalar sonrası dişlerde kırık, yer değiştirme ya da tamamen yerinden çıkma gibi travmalar yaşanabilir. Travma sonrası ilk müdahale çok önemlidir. Erken ve doğru tedaviyle dişi kurtarmak mümkündür.
+
+📌 Travma anlarında doğru müdahale, çocuk dişinin kaderini belirler`,
     image: '/travma.png'
   },
   {
@@ -74,9 +55,9 @@ const treatmentData: Treatment[] = [
     title: 'Çocuklarda Diş Çekimi',
     icon: '🔧',
     color: 'green',
-    content: `Çocuklarda da erişkinlerde olduğu gibi süt ya da daimi dişleri çekilebilir. Daimi dişleri ortodontik karar ya da aşırı harabiyet durumu gibi ender durumlarda çekmekteyiz. Bu cerrahiler, çocukların diş sağlığını korumak ve gelecekte olası problemleri önlemek için uygulanabilir.
-    
-    Çocuklarda diş çekim işlemleri çocukların psikolojileri düşünülerek onları tedirgin etmeden yapılmaktadır. Diş çekimleri lokal anestezi altında yapılmaktadır. Süt dişlerinin aşırı sallandığı durumlarda topikal anestezik spreyle de uyuşturularak basitçe süt dişini çekebilmekteyiz.`,
+    content: `Süt dişlerinin aşırı çürük, enfeksiyon veya yer tutucu gereksinimi gibi nedenlerle çekilmesi gerekebilir. Çocuk dostu tekniklerle ağrısız ve konforlu bir çekim süreci sağlanır.
+
+📌 Her çekim bir kayıp değil, bazen sağlıklı dişlerin önünü açan bir adımdır.`,
     image: '/discekimi.png'
   },
   {
@@ -84,12 +65,10 @@ const treatmentData: Treatment[] = [
     title: 'Çocuklarda Diş Tedavilerinde Genel Anestezi ve Sedasyon İşlemleri',
     icon: '💤',
     color: 'teal',
-    content: `Çocuklarda diş tedavileri, çocukların genellikle heyecan veya endişeyle yaklaştığı deneyimler olabilir. Bazı çocuklar, diş hekimine gitmeye karşı direnç gösterebilir ve tedavi sırasında sakinleşmeleri zor olabilir. Bu gibi durumlarda, çocukların daha rahat bir deneyim yaşamalarına yardımcı olmak için genel anestezi ve sedasyon yöntemleri kullanılabilir.
-    
-    Genel anestezi, çocuğun bilincinin geçici olarak kapatılmasını ve uykuya daldırılmasını sağlayan bir tür anestezi yöntemidir. Bu işlem, ağız ve diş sağlığı için daha kapsamlı ve uzun süreli tedavilere ihtiyaç duyulan durumlarda uygulanır.
-    
-    Sedasyon, çocuğun sakinleşmesini ve anksiyetesini azaltmak için kullanılan hafif anestezi birimidir. Çocuğun bilinci hafifçe etkilenir, ancak çocuk bilinçli bir şekilde nefes alma ve tepki verme yeteneğini korur.`,
-    image: '/kanal.png'
+    content: `Küçük yaştaki ya da iş birliği kısıtlı çocuklarda, tüm diş tedavileri genel anestezi veya sedasyon altında güvenle tamamlanabilir. Bu yöntemler sayesinde çocuklar için konforlu, aileler için ise stresiz bir tedavi süreci sağlanır.
+
+📌 Bazen en iyi tedavi, çocuğun hiçbir şey hatırlamadığı tedavidir.`,
+    image: '/sedasyon.png'
   },
   {
     id: 'gicirdatma',
@@ -102,11 +81,22 @@ const treatmentData: Treatment[] = [
     
     Çocuğunuzda diş gıcırdatma belirtileri fark ederseniz, bir pedodontiste (çocuk diş hekimi) danışmanız önemlidir. Çocuğun durumunu değerlendirerek uygun tedavi yöntemini belirleyecektir.`,
     image: '/apareys.png'
+  },
+  {
+    id: 'ortodonti',
+    title: 'Çocuklar İçin Ortodontik Apareyler ve Tedavileri',
+    icon: '🦷',
+    color: 'blue',
+    content: `
+Çocuklarda çapraşık dişler ve çene problemleri erken yaşta fark edilirse, basit ortodontik apareylerle tedavi edilebilir. Hareketli veya sabit apareylerle hem çene gelişimi yönlendirilir hem de ileride oluşabilecek sorunların önüne geçilir. Erken müdahale, ileride daha büyük tedavilere ihtiyaç kalmamasını sağlar.
+
+📌 Ömer Özdemir ile sağlıklı gülüşler, küçük yaşta başlar.`,
+    image: '/apareys.png'
   }
 ];
 
 export default function Tedaviler() {
-  const [activeTab, setActiveTab] = useState<string>('ortodonti');
+  const [activeTab, setActiveTab] = useState<string>('curuk');
   const [imageError, setImageError] = useState<Record<string, boolean>>({});
 
   // Aktif tedavi verilerini al
@@ -219,22 +209,28 @@ export default function Tedaviler() {
           {/* Tedavi İçeriği */}
           {activeTreatment && (
             <div className={`bg-white rounded-3xl shadow-lg overflow-hidden transition-all duration-300 transform hover:scale-[1.01] ${colorClasses[activeTreatment.color].border} border-2`}>
-              <div className="md:flex">
+              <div className="md:flex h-full">
                 {/* Tedavi Resmi */}
-                <div className="md:w-2/5 h-64 md:h-auto relative">
-                  <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+                <div className="md:w-2/5 h-64 md:h-auto relative flex items-center justify-center">
+                  <div className="absolute inset-0 flex items-center justify-center overflow-hidden bg-gray-50 rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none">
                     {imageError[activeTreatment.id] ? (
                       <div className="w-full h-full bg-gray-100 flex items-center justify-center">
                         <div className="text-8xl">{activeTreatment.icon}</div>
                       </div>
                     ) : (
-                      <Image 
-                        src={activeTreatment.image} 
-                        alt={activeTreatment.title}
-                        fill
-                        style={{ objectFit: 'cover' }}
-                        onError={() => handleImageError(activeTreatment.id)}
-                      />
+                      <div className="relative w-full h-full flex items-center justify-center">
+                        <Image 
+                          src={activeTreatment.image} 
+                          alt={activeTreatment.title}
+                          fill
+                          style={{ 
+                            objectFit: 'contain', 
+                            padding: '16px',
+                          }}
+                          onError={() => handleImageError(activeTreatment.id)}
+                          className="rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none"
+                        />
+                      </div>
                     )}
                   </div>
                 </div>
@@ -263,19 +259,34 @@ export default function Tedaviler() {
             <h2 className="text-3xl font-bold mb-6 text-center">Neden Dr. Ömer Özdemir?</h2>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-4xl mb-4">👶</div>
-                <h3 className="text-xl font-semibold mb-2">Çocuk Dostu Yaklaşım</h3>
-                <p>Çocukların kendilerini rahat ve güvende hissetmelerini sağlayan özel bir yaklaşım sunuyoruz.</p>
+                <div className="text-4xl mb-4">🦷</div>
+                <h3 className="text-xl font-semibold mb-2">Koruyucu Tedavi Odaklı</h3>
+                <p>Gereksiz işlemler yerine, koruyucu ve minimal girişimsel tedavilerle çocukların doğal diş yapısını korumayı hedefliyoruz.</p>
               </div>
               <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
-                <div className="text-4xl mb-4">🎓</div>
-                <h3 className="text-xl font-semibold mb-2">Uzman Bakım</h3>
-                <p>Çocuk diş sağlığı konusunda uzmanlaşmış, deneyimli ve sürekli kendini geliştiren bir ekibiz.</p>
+                <div className="text-4xl mb-4">🎯</div>
+                <h3 className="text-xl font-semibold mb-2">Kişiselleştirilmiş Planlama</h3>
+                <p>Her çocuğun ihtiyacı farklıdır. Bireysel tedavi planlarıyla çocuğunuza özel çözümler sunuyoruz.</p>
+              </div>
+              <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-4xl mb-4">👨👩👧</div>
+                <h3 className="text-xl font-semibold mb-2">Aileyle İş Birliği</h3>
+                <p>Ebeveynlerin tedavi sürecine katılımını önemsiyoruz. Çocuğunuzun alışkanlıkları, korkuları ve beklentileri doğrultusunda birlikte karar veriyoruz.</p>
+              </div>
+              <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-4xl mb-4">🤝</div>
+                <h3 className="text-xl font-semibold mb-2">Gülümseten İletişim</h3>
+                <p>Çocuklarla güçlü bir iletişim kurarak onları tedaviye hazırlıyor, kliniğimizden mutlu ayrılmalarını sağlıyoruz.</p>
               </div>
               <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
                 <div className="text-4xl mb-4">🔍</div>
                 <h3 className="text-xl font-semibold mb-2">Modern Teknoloji</h3>
-                <p>En son teknoloji ve yöntemlerle çocuğunuzun diş sağlığını koruyoruz.</p>
+                <p>Dijital röntgen ve anestezi, lazer destekli cihazlar, dijital tarama sistemleri ve çocuk dostu sistemlerle tedavileri hem hızlı hem de konforlu hâle getiriyoruz.</p>
+              </div>
+              <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-4xl mb-4">👶</div>
+                <h3 className="text-xl font-semibold mb-2">Çocuk Dostu Yaklaşım</h3>
+                <p>Korkuyu kapıda bırakıyoruz! Her çocuğa özel iletişimle, sevgi dolu ve güven veren bir ortam sunuyoruz. Çünkü tedavi, güvenle başlar.</p>
               </div>
             </div>
           </div>

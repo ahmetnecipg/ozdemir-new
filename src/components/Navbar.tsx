@@ -1,6 +1,7 @@
 "use client"
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import AIAssistantDrawer from './AIAssistantDrawer';
@@ -35,14 +36,13 @@ const Navbar = () => {
           <div className="flex justify-between items-center">
             <Link href="/" className={`text-xl md:text-2xl font-bold transition-colors duration-300 ${scrolled ? 'text-blue-600' : 'text-white'}`}>
               <span className="flex items-center">
-                <svg className="w-8 h-8 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M3.53125 10C5.22825 4.95 8.81525 2 12.0002 2C15.1862 2 18.7722 4.95 20.4692 10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M3.53125 14C5.22825 19.05 8.81525 22 12.0002 22C15.1862 22 18.7722 19.05 20.4692 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M12 22C13.1046 22 14 21.1046 14 20C14 18.8954 13.1046 18 12 18C10.8954 18 10 18.8954 10 20C10 21.1046 10.8954 22 12 22Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M20 12C21.1046 12 22 11.1046 22 10C22 8.89543 21.1046 8 20 8C18.8954 8 18 8.89543 18 10C18 11.1046 18.8954 12 20 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  <path d="M4 12C5.10457 12 6 11.1046 6 10C6 8.89543 5.10457 8 4 8C2.89543 8 2 8.89543 2 10C2 11.1046 2.89543 12 4 12Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
+                <Image 
+                  src="/logonew.png" 
+                  alt="Dr. Ömer Özdemir Logo" 
+                  width={100} 
+                  height={100} 
+                  className="mr-2"
+                />
                 Dr. Ömer Özdemir
               </span>
             </Link>
