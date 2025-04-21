@@ -71,18 +71,6 @@ const treatmentData: Treatment[] = [
     image: '/sedasyon.png'
   },
   {
-    id: 'gicirdatma',
-    title: 'Çocuklarda Diş Gıcırdatma Tedavisi',
-    icon: '😬',
-    color: 'pink',
-    content: `Çocuklarda diş gıcırdatma (bruksizm), uyku sırasında veya stresli durumlarda bilinçsizce dişleri sıkma ve gıcırdatma eylemidir. Bu yaygın bir durumdur ve çocuklar arasında farklı yaş gruplarında görülebilir. Diş gıcırdatma genellikle çocukların diş ve çene yapısının gelişimi sırasında ortaya çıkar.
-    
-    Çoğu durumda, çocukların farkında olmadan gece uykuları sırasında gerçekleşir. Ancak bazı çocuklar, stresli veya gergin anlarda da diş gıcırdatma eğilimi gösterebilir. Diş gıcırdatma genellikle aileler tarafından fark edilir; çünkü uyku esnasında yüksek sesli gıcırdatma sesleri veya diş sıkma izleri gözlemlenebilir.
-    
-    Çocuğunuzda diş gıcırdatma belirtileri fark ederseniz, bir pedodontiste (çocuk diş hekimi) danışmanız önemlidir. Çocuğun durumunu değerlendirerek uygun tedavi yöntemini belirleyecektir.`,
-    image: '/apareys.png'
-  },
-  {
     id: 'ortodonti',
     title: 'Çocuklar İçin Ortodontik Apareyler ve Tedavileri',
     icon: '🦷',
@@ -291,16 +279,6 @@ export default function Tedaviler() {
             </div>
           </div>
 
-          {/* İletişim CTA */}
-          <div className="mt-16 bg-blue-50 rounded-3xl p-8 shadow-md border-2 border-blue-200 text-center">
-            <h2 className="text-3xl font-bold text-blue-600 mb-4">Randevu Alın</h2>
-            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Çocuğunuzun diş sağlığı için profesyonel tedavi ve danışmanlık almak için hemen bize ulaşın.
-            </p>
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-blue-700 transition-colors shadow-md">
-              İletişime Geçin
-            </button>
-          </div>
         </div>
       </main>
       <Footer />

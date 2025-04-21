@@ -128,8 +128,15 @@ const AIAssistantDrawer = ({ isOpen, onClose }: AIAssistantDrawerProps) => {
           </button>
         </div>
         
-        {/* Mesaj alanı */}
-        <div className="flex-1 p-4 overflow-y-auto h-[calc(100vh-180px)]">
+        {/* Mesaj alanı - Devre dışı */}
+        <div className="flex-1 p-4 overflow-y-auto h-[calc(100vh-180px)] relative filter grayscale opacity-50">
+          {/* YAKINDA yazısı */}
+          <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+            <div className="bg-blue-600 bg-opacity-80 text-white py-6 px-10 rounded-xl text-3xl font-bold shadow-xl">
+              ÇOK YAKINDA
+            </div>
+          </div>
+          
           <div className="space-y-4">
             {messages.map((message, index) => (
               <div 
@@ -170,21 +177,21 @@ const AIAssistantDrawer = ({ isOpen, onClose }: AIAssistantDrawerProps) => {
           </div>
         </div>
         
-        {/* Input alanı */}
-        <div className="border-t p-4 bg-white">
+        {/* Input alanı - Devre dışı */}
+        <div className="border-t p-4 bg-white opacity-50">
           <div className="flex rounded-lg border overflow-hidden">
             <input
               type="text"
+              disabled
               value={inputText}
               onChange={(e) => setInputText(e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Bir mesaj yazın..."
-              className="flex-1 px-4 py-2 focus:outline-none"
+              className="flex-1 px-4 py-2 focus:outline-none bg-gray-100 cursor-not-allowed"
             />
             <button
-              onClick={handleSendMessage}
-              className="bg-blue-600 text-white px-4 py-2 hover:bg-blue-700 transition-colors"
-              disabled={inputText.trim() === ''}
+              disabled
+              className="bg-gray-400 text-white px-4 py-2 cursor-not-allowed"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -192,7 +199,7 @@ const AIAssistantDrawer = ({ isOpen, onClose }: AIAssistantDrawerProps) => {
             </button>
           </div>
           <p className="text-xs text-gray-500 mt-2 text-center">
-            *Bu bir AI asistanıdır ve gerçek diş hekimi tavsiyesi yerine geçmez. Acil durumlarda lütfen bir diş hekimine başvurun.
+            *Bu AI asistanı çok yakında hizmetinizde olacak.
           </p>
         </div>
       </div>
