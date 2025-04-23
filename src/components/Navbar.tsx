@@ -38,12 +38,12 @@ const Navbar = () => {
               <span className="flex items-center">
                 <Image 
                   src="/logonew.png" 
-                  alt="Dr. Ömer Özdemir Logo" 
+                  alt="Dt. Ömer Özdemir Logo" 
                   width={100} 
                   height={100} 
                   className="mr-2"
                 />
-                Dr. Ömer Özdemir
+                Dt. Ömer Özdemir
               </span>
             </Link>
 

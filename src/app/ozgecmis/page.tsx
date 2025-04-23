@@ -7,18 +7,20 @@ export default function OzgecmisPage() {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <main className="container mx-auto px-6 py-16 max-w-7xl">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-12 border-b pb-6">Dr. Ömer Özdemir</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-12 border-b pb-6">Dt. Ömer Özdemir</h1>
         
         <div className="md:flex mb-16 gap-10 items-start">
-            <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100 h-full flex flex-col">
-              <div className="relative h-[550px] bg-gray-50">
-                <Image 
-                  src="/drphoto.jpg" 
-                  alt="Dr. Ömer Özdemir" 
-                  fill 
-                  style={{ objectFit: 'contain' }} 
-                  className="rounded-t-lg" 
-                />
+            <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100 flex flex-col md:flex-row w-full">
+              <div className="w-full md:w-1/3 p-4">
+                <div className="relative h-[600px] w-full">
+                  <Image 
+                    src="/drphoto.jpg" 
+                    alt="Dt. Ömer Özdemir" 
+                    fill 
+                    style={{ objectFit: 'contain' }} 
+                    className="rounded-lg" 
+                  />
+                </div>
               </div>
               <div className="p-8 bg-white flex-grow flex flex-col justify-between">
                 <div>
@@ -61,7 +63,7 @@ export default function OzgecmisPage() {
             <div className="bg-white shadow-lg rounded-lg p-8 mb-8 border border-gray-100">
               <h2 className="text-3xl font-semibold text-gray-900 mb-6">Kişisel Bilgiler</h2>
               <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                Dr. Ömer Özdemir 1999 yılında İstanbul Üsküdar&apos;da ailesinin ilk çocuğu olarak dünyaya geldi. İlkokulu İstanbul Altunizade Hafize Özal İlkokulunda, liseyi İstanbul Ümraniye Anadolu Lisesinde tamamladı. Lise mezuniyetinin hemen ardından İstanbul Üniversitesi Diş Hekimliği Fakültesi&apos;ni kazandı.
+                Dt. Ömer Özdemir 1999 yılında İstanbul Üsküdar&apos;da ailesinin ilk çocuğu olarak dünyaya geldi. İlkokulu İstanbul Altunizade Hafize Özal İlkokulunda, liseyi İstanbul Ümraniye Anadolu Lisesinde tamamladı. Lise mezuniyetinin hemen ardından İstanbul Üniversitesi Diş Hekimliği Fakültesi&apos;ni kazandı.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Üniversite öğrenimi sırasında ikinci üniversite olarak kendi üniversitesinin farklı bir bölümü olan Sağlık Kurumları İşletmeciliği bölümünü bitirdi. Lisans eğitimini onur derecesi ile tamamladıktan sonra aynı yıl içerisinde aynı fakültede Pedodonti (Çocuk Diş Hekimliği) Ana bilim Dalı&apos;nda doktora eğitimine başladı ve halen araştırmalarını sürdürmektedir.

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Dr. Ömer Özdemir | Çocuk Diş Kliniği",
-  description: "Dr. Ömer Özdemir ile çocuklarınız için özel pedodonti (çocuk diş hekimliği) hizmetleri. Dijital diş hekimliği ve yapay zeka destekli modern yaklaşım.",
+  title: "Dt. Ömer Özdemir | Çocuk Diş Kliniği",
+  description: "Dt. Ömer Özdemir ile çocuklarınız için özel pedodonti (çocuk diş hekimliği) hizmetleri. Dijital diş hekimliği ve yapay zeka destekli modern yaklaşım.",
 };
 
 export default function RootLayout({

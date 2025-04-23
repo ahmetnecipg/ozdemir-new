@@ -5,33 +5,26 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white relative overflow-hidden">
-      {/* Anime karakterleri */}
-      <div className="absolute -right-8 top-20 w-24 h-24 rounded-full overflow-hidden z-10 transform rotate-6 shadow-lg">
-        <Image src="/1.png" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
-      </div>
-      
-      <div className="absolute left-6 top-[40%] w-20 h-20 rounded-full overflow-hidden z-10 transform -rotate-12 shadow-lg">
-        <Image src="/3.webp" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
-      </div>
-      
+      {/* All top images removed */}
       
       <Navbar />
       <main className="container mx-auto px-4 py-12 md:py-16 max-w-full">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 relative">
             {/* Sağ üst anime karakteri */}
-            <div className="absolute -top-8 -right-4 md:right-0 w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden transform rotate-12 shadow-lg hidden md:block">
-              <Image src="/2.png" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
+            <div className="absolute -bottom-16 right-2 md:right-8 w-12 h-12 md:w-20 md:h-20 transform rotate-12 shadow-lg">
+              <Image src="/2.png" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full rounded-full" />
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-blue-600 mb-3">Çocuk Diş Doktorunuz</h1>
-            <p className="text-xl md:text-2xl text-purple-600 font-medium">Dr. Ömer Özdemir&apos;in Renkli Dünyasına Hoş Geldiniz!</p>
+            <p className="text-xl md:text-2xl text-purple-600 font-medium">Dt. Ömer Özdemir&apos;in Renkli Dünyasına Hoş Geldiniz!</p>
           </div>
           
           <div className="bg-white rounded-3xl shadow-lg overflow-hidden mb-12 transform hover:scale-[1.01] transition-transform duration-300 relative">
             {/* Sol üst anime karakteri */}
-            <div className="absolute -top-6 -left-6 w-20 h-20 rounded-full overflow-hidden z-20 transform -rotate-12 shadow-lg hidden md:block">
-              <Image src="/4.jpeg" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
+            {/* Ana bölüm köşesi karakteri */}
+            <div className="absolute -bottom-4 md:-bottom-6 right-4 w-16 h-16 md:w-24 md:h-24 z-20 transform rotate-12">
+              <Image src="/cute5.jpg" alt="Anime karakter" width={130} height={130} style={{ objectFit: 'contain' }} />
             </div>
             
             <div className="md:flex">
@@ -60,43 +53,17 @@ export default function Home() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-10 mb-16 relative">
-            {/* Sağ orta anime karakteri */}
-            <div className="absolute top-1/2 -right-4 transform -translate-y-1/2 w-16 h-16 rounded-full overflow-hidden z-20 shadow-lg hidden md:block">
-              <Image src="/7.jpg" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
-            </div>
-            
-            <div className="bg-blue-50 rounded-3xl p-8 shadow-md border-2 border-blue-200 relative overflow-hidden">
-              {/* Sol üst anime karakteri */}
-              <div className="absolute -top-4 -left-4 w-16 h-16 rounded-full overflow-hidden z-20 transform -rotate-6 shadow-lg">
-                <Image src="/8.jpeg" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
-              </div>
-              
-              <div className="relative z-10">
-                <div className="flex items-center mb-6">
-                  <span className="text-blue-500 text-5xl mr-3">🌎</span>
-                  <h2 className="text-3xl font-bold text-blue-600">Uluslararası Deneyim</h2>
-                </div>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="text-xl font-semibold text-blue-600">Whitecenter Belgie - Erasmus+ Stajı</h3>
-                    <p className="text-gray-600">Haziran 2024 – Eylül 2024 | Genk, Belçika</p>
-                    <p className="text-lg text-gray-700 mt-2">
-                      Belçika&apos;daki diş hekimliği uygulamalarına dair kapsamlı bir bakış açısı kazanıldı. Diş hekimliğinin Avrupa standartlarında nasıl yapıldığı tecrübe edildi.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Background anime image */}
-              <div className="absolute right-0 bottom-0 w-48 h-48 opacity-20">
-                <Image src="/ghibli.jpg" alt="Anime illustration" width={200} height={200} style={{ objectFit: 'contain' }} />
-              </div>
-            </div>
+            {/* Luffy image is being removed */}
             
             <div className="bg-green-50 rounded-3xl p-8 shadow-md border-2 border-green-200 relative">
-              {/* Sağ orta anime karakteri */}
-              <div className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full overflow-hidden z-20 transform rotate-12 shadow-lg">
+              {/* Köşe anime karakteri - yeşil kart */}
+              <div className="absolute -bottom-3 -right-3 w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden z-20 transform rotate-12 shadow-lg">
                 <Image src="/9.webp" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
+              </div>
+              
+              {/* Üst köşe anime karakteri - yeşil kart */}
+              <div className="absolute -top-4 right-4 w-16 h-16 md:w-20 md:h-20 z-20 transform -rotate-6">
+                <Image src="/cute4.png" alt="Anime karakter" width={112} height={112} style={{ objectFit: 'contain' }} />
               </div>
               
               <div className="flex items-center mb-6">
@@ -122,89 +89,85 @@ export default function Home() {
                 </li>
                 <li className="flex items-start">
                   <span className="text-green-500 text-xl mr-3">😴</span>
-                  <span>Genel anestezi ve sedasyon altında diş tedavileri</span>
+                  <span>Genel anestezi ve sedasyon altında diş tedaviler</span>
                 </li>
               </ul>
             </div>
-          </div>
-          
-          <div className="bg-purple-50 rounded-3xl p-10 shadow-md border-2 border-purple-200 mb-16 relative">
-            {/* Sol alt anime karakteri */}
-            <div className="absolute -bottom-6 -left-6 w-20 h-20 rounded-full overflow-hidden z-20 transform -rotate-12 shadow-lg hidden md:block">
-              <Image src="/10.png" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
-            </div>
             
-            <div className="flex items-center mb-6">
-              <span className="text-purple-500 text-5xl mr-3">📞</span>
-              <h2 className="text-3xl font-bold text-purple-600">Benimle Tanışmaya Gel!</h2>
-            </div>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <p className="text-lg text-gray-700 mb-4">
-                  Randevu almak ya da sorularınız için aşağıdaki bilgilerden bana ulaşabilirsiniz:
-                </p>
-                <ul className="text-lg text-gray-700 space-y-3">
-                  <li className="flex items-center">
-                    <span className="text-blue-500 text-xl mr-3">📱</span>
-                    <span>Telefon: 05538885444</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-blue-500 text-xl mr-3">✉️</span>
-                    <span>E-posta: iletisim@ozdemirdis.com</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-blue-500 text-xl mr-3">🏥</span>
-                    <span>Adres: Osmaniye, Ümraniye Sk. No:2/B, 34146 Bakırköy/İstanbul</span>
-                  </li>
-                </ul>
+            <div className="bg-blue-50 rounded-3xl p-8 shadow-md border-2 border-blue-200 relative">
+              {/* Köşe anime karakteri - mavi kart */}
+              <div className="absolute -bottom-3 -left-3 w-12 h-12 md:w-16 md:h-16 rounded-full overflow-hidden z-20 transform -rotate-12 shadow-lg">
+                <Image src="/8.jpeg" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
               </div>
-              <div>
-                <p className="text-lg text-gray-700 mb-4 font-semibold">Çalışma Saatlerimiz:</p>
-                <ul className="text-lg text-gray-700 space-y-3">
-                  <li className="flex items-center">
-                    <span className="text-green-500 text-xl mr-3">🗓️</span>
-                    <span>Pazartesi - Cuma: 09:00 - 18:00</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-green-500 text-xl mr-3">🗓️</span>
-                    <span>Cumartesi: 09:00 - 16:00</span>
-                  </li>
-                  <li className="flex items-center">
-                    <span className="text-red-500 text-xl mr-3">🗓️</span>
-                    <span>Pazar: Kapalı</span>
-                  </li>
-                </ul>
+              
+              {/* Üst köşe anime karakteri - mavi kart */}
+              <h2 className="text-3xl font-bold text-blue-600 mb-6">Diş Bakımı İpuçları</h2>
+              <div className="grid md:grid-cols-3 gap-4 text-center">
+                <div className="bg-white p-4 rounded-xl shadow-sm">
+                  <div className="text-4xl mb-3">🪥</div>
+                  <p className="text-base text-gray-700">Günde iki kez dişlerinizi fırçalayın!</p>
+                </div>
+                <div className="bg-white p-4 rounded-xl shadow-sm">
+                  <div className="text-4xl mb-3">🍎</div>
+                  <p className="text-base text-gray-700">Sağlıklı yiyecekler dişlerinize iyi gelir!</p>
+                </div>
+                <div className="bg-white p-4 rounded-xl shadow-sm">
+                  <div className="text-4xl mb-3">😁</div>
+                  <p className="text-base text-gray-700">Düzenli diş kontrolü mutlu gülüşler demek!</p>
+                </div>
               </div>
             </div>
           </div>
           
-          <div className="bg-blue-50 rounded-3xl p-8 shadow-md border-2 border-blue-200 relative">
-            {/* Sağ alt anime karakteri */}
-            <div className="absolute -bottom-6 -right-6 w-20 h-20 rounded-full overflow-hidden z-20 transform rotate-12 shadow-lg hidden md:block">
-              <Image src="/11.jpg" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
+          {/* Neden Dr. Ömer Özdemir? Bölümü */}
+          <div className="mt-16 mb-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl p-10 text-white shadow-lg relative">
+            {/* Soldaki karakter - Neden Dr. Ömer bölümü */}
+            <div className="absolute -top-8 left-8 w-16 h-16 md:w-24 md:h-24 z-10">
+              <Image src="/7.jpg" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full rounded-full" />
             </div>
             
-            {/* Orta üst anime karakteri */}
-            <div className="absolute -top-8 right-1/3 w-18 h-18 rounded-full overflow-hidden z-20 transform -rotate-12 shadow-lg hidden md:block">
-              <Image src="/12.png" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full" />
+            {/* Sağdaki karakter - Neden Dr. Ömer bölümü */}
+            <div className="absolute -bottom-6 right-8 w-16 h-16 md:w-24 md:h-24 z-10">
+              <Image src="/11.jpg" alt="Anime karakteri" width={100} height={100} className="object-cover w-full h-full rounded-full" />
             </div>
             
-            <h2 className="text-3xl font-bold text-blue-600 mb-6 text-center">Diş Bakımı İpuçları</h2>
-            <div className="grid md:grid-cols-3 gap-6 text-center">
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="text-5xl mb-4">🪥</div>
-                <p className="text-lg text-gray-700">Günde iki kez dişlerinizi fırçalayın!</p>
+            <h2 className="text-3xl font-bold mb-6 text-center">Neden Dt. Ömer Özdemir?</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-4xl mb-4">🦷</div>
+                <h3 className="text-xl font-semibold mb-2">Koruyucu Tedavi Odaklı</h3>
+                <p>Gereksiz işlemler yerine, koruyucu ve minimal girişimsel tedavilerle çocukların doğal diş yapısını korumayı hedefliyoruz.</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="text-5xl mb-4">🍎</div>
-                <p className="text-lg text-gray-700">Sağlıklı yiyecekler dişlerinize iyi gelir!</p>
+              <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-4xl mb-4">🎯</div>
+                <h3 className="text-xl font-semibold mb-2">Kişiselleştirilmiş Planlama</h3>
+                <p>Her çocuğun ihtiyacı farklıdır. Bireysel tedavi planlarıyla çocuğunuza özel çözümler sunuyoruz.</p>
               </div>
-              <div className="bg-white p-6 rounded-xl shadow-sm">
-                <div className="text-5xl mb-4">😁</div>
-                <p className="text-lg text-gray-700">Düzenli diş kontrolü mutlu gülüşler demek!</p>
+              <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-4xl mb-4">👨👩👧</div>
+                <h3 className="text-xl font-semibold mb-2">Aileyle İş Birliği</h3>
+                <p>Ebeveynlerin tedavi sürecine katılımını önemsiyoruz. Çocuğunuzun alışkanlıkları, korkuları ve beklentileri doğrultusunda birlikte karar veriyoruz.</p>
+              </div>
+              <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-4xl mb-4">🤝</div>
+                <h3 className="text-xl font-semibold mb-2">Gülümseten İletişim</h3>
+                <p>Çocuklarla güçlü bir iletişim kurarak onları tedaviye hazırlıyor, kliniğimizden mutlu ayrılmalarını sağlıyoruz.</p>
+              </div>
+              <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-4xl mb-4">🔍</div>
+                <h3 className="text-xl font-semibold mb-2">Modern Teknoloji</h3>
+                <p>Dijital röntgen ve anestezi, lazer destekli cihazlar, dijital tarama sistemleri ve çocuk dostu sistemlerle tedavileri hem hızlı hem de konforlu hâle getiriyoruz.</p>
+              </div>
+              <div className="bg-white/10 p-6 rounded-xl backdrop-blur-sm">
+                <div className="text-4xl mb-4">👶</div>
+                <h3 className="text-xl font-semibold mb-2">Çocuk Dostu Yaklaşım</h3>
+                <p>Korkuyu kapıda bırakıyoruz! Her çocuğa özel iletişimle, sevgi dolu ve güven veren bir ortam sunuyoruz. Çünkü tedavi, güvenle başlar.</p>
               </div>
             </div>
           </div>
+          
+          {/* Bottom decorative elements removed */}
+          
         </div>
       </main>
       <Footer />

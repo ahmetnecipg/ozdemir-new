@@ -18,7 +18,7 @@ const AIAssistantDrawer = ({ isOpen, onClose }: AIAssistantDrawerProps) => {
   const [messages, setMessages] = useState<Message[]>([
     { 
       from: 'ai', 
-      text: 'Merhaba! Ben Dr. Ömer Özdemir\'in AI asistanıyım. Diş sağlığınız hakkında sorularınızı yanıtlayabilirim. Size nasıl yardımcı olabilirim?', 
+      text: 'Merhaba! Ben Dt. Ömer Özdemir\'in AI asistanıyım. Diş sağlığınız hakkında sorularınızı yanıtlayabilirim. Size nasıl yardımcı olabilirim?', 
       timestamp: new Date() 
     }
   ]);
@@ -114,7 +114,7 @@ const AIAssistantDrawer = ({ isOpen, onClose }: AIAssistantDrawerProps) => {
               />
             </div>
             <div>
-              <h3 className="font-bold text-lg">Dr. Ömer AI</h3>
+              <h3 className="font-bold text-lg">Dt. Ömer AI</h3>
               <p className="text-xs text-blue-100">Diş Hekimi AI Asistanı</p>
             </div>
           </div>
@@ -160,7 +160,7 @@ const AIAssistantDrawer = ({ isOpen, onClose }: AIAssistantDrawerProps) => {
                         />
                       </div>
                       <div>
-                        <span className="font-medium text-sm">Dr. Ömer AI</span>
+                        <span className="font-medium text-sm">Dt. Ömer AI</span>
                       </div>
                     </div>
                   )}
