@@ -11,13 +11,13 @@ export default function OzgecmisPage() {
         
         <div className="md:flex mb-16 gap-10 items-start">
             <div className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-100 flex flex-col md:flex-row w-full">
-              <div className="w-full md:w-1/3 p-4">
+              <div className="w-full md:w-1/2 p-4">
                 <div className="relative h-[600px] w-full">
                   <Image 
                     src="/drphoto.jpg" 
                     alt="Dt. Ömer Özdemir" 
                     fill 
-                    style={{ objectFit: 'contain' }} 
+                    style={{ objectFit: 'cover' }} 
                     className="rounded-lg" 
                   />
                 </div>
@@ -36,7 +36,7 @@ export default function OzgecmisPage() {
                       <svg className="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                       </svg>
-                      <span className="text-lg">iletisim@ozdemirdis.com</span>
+                      <span className="text-lg">ozdemirtarikomer@gmail.com</span>
                     </li>
                     <li className="flex items-center">
                       <svg className="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -56,48 +56,48 @@ export default function OzgecmisPage() {
                 <div className="mt-6 pt-6 border-t border-gray-100">
                   <p className="text-blue-600 font-medium">Randevu için lütfen iletişime geçiniz.</p>
                 </div>
+              </div>
             </div>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-10 mb-16">
+          <div className="bg-white shadow-lg rounded-lg p-8 border border-gray-100">
+            <h2 className="text-3xl font-semibold text-gray-900 mb-6">Kişisel Bilgiler</h2>
+            <p className="text-lg text-gray-700 mb-4 leading-relaxed">
+              Dt. Ömer Özdemir 1999 yılında İstanbul Üsküdar&apos;da ailesinin ilk çocuğu olarak dünyaya geldi. İlkokulu İstanbul Altunizade Hafize Özal İlkokulunda, liseyi İstanbul Ümraniye Anadolu Lisesinde tamamladı. Lise mezuniyetinin hemen ardından İstanbul Üniversitesi Diş Hekimliği Fakültesi&apos;ni kazandı.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Üniversite öğrenimi sırasında ikinci üniversite olarak kendi üniversitesinin farklı bir bölümü olan Sağlık Kurumları İşletmeciliği bölümünü bitirdi. Lisans eğitimini onur derecesi ile tamamladıktan sonra aynı yıl içerisinde aynı fakültede Pedodonti (Çocuk Diş Hekimliği) Ana bilim Dalı&apos;nda doktora eğitimine başladı ve halen araştırmalarını sürdürmektedir.
+            </p>
           </div>
           
-          <div className="md:w-2/3">
-            <div className="bg-white shadow-lg rounded-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-semibold text-gray-900 mb-6">Kişisel Bilgiler</h2>
-              <p className="text-lg text-gray-700 mb-4 leading-relaxed">
-                Dt. Ömer Özdemir 1999 yılında İstanbul Üsküdar&apos;da ailesinin ilk çocuğu olarak dünyaya geldi. İlkokulu İstanbul Altunizade Hafize Özal İlkokulunda, liseyi İstanbul Ümraniye Anadolu Lisesinde tamamladı. Lise mezuniyetinin hemen ardından İstanbul Üniversitesi Diş Hekimliği Fakültesi&apos;ni kazandı.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Üniversite öğrenimi sırasında ikinci üniversite olarak kendi üniversitesinin farklı bir bölümü olan Sağlık Kurumları İşletmeciliği bölümünü bitirdi. Lisans eğitimini onur derecesi ile tamamladıktan sonra aynı yıl içerisinde aynı fakültede Pedodonti (Çocuk Diş Hekimliği) Ana bilim Dalı&apos;nda doktora eğitimine başladı ve halen araştırmalarını sürdürmektedir.
-              </p>
-            </div>
-            
-            <div className="bg-white shadow-lg rounded-lg p-8 mb-8 border border-gray-100">
-              <h2 className="text-3xl font-semibold text-gray-900 mb-6">Akademik Eğitim</h2>
-              <ul className="space-y-6">
-                <li className="border-l-4 border-blue-600 pl-6 py-2">
-                  <div className="font-semibold text-xl">İstanbul Üniversitesi, Diş Hekimliği Fakültesi</div>
-                  <div className="text-gray-600 text-lg">Pedodonti Anabilim Dalı, Doktora</div>
-                  <div className="text-gray-500">Devam Ediyor</div>
-                </li>
-                <li className="border-l-4 border-blue-600 pl-6 py-2">
-                  <div className="font-semibold text-xl">İstanbul Üniversitesi, Sağlık Kurumları İşletmeciliği</div>
-                  <div className="text-gray-600 text-lg">Lisans Derecesi</div>
-                  <div className="text-gray-500">Tamamlandı</div>
-                </li>
-                <li className="border-l-4 border-blue-600 pl-6 py-2">
-                  <div className="font-semibold text-xl">İstanbul Üniversitesi, Diş Hekimliği Fakültesi</div>
-                  <div className="text-gray-600 text-lg">Lisans Derecesi (Onur Derecesi ile Mezun)</div>
-                  <div className="text-gray-500">Tamamlandı</div>
-                </li>
-                <li className="border-l-4 border-blue-600 pl-6 py-2">
-                  <div className="font-semibold text-xl">İstanbul Ümraniye Lisesi</div>
-                  <div className="text-gray-500">Tamamlandı</div>
-                </li>
-                <li className="border-l-4 border-blue-600 pl-6 py-2">
-                  <div className="font-semibold text-xl">İstanbul Altunizade Hafize Özal İlkokulu</div>
-                  <div className="text-gray-500">Tamamlandı</div>
-                </li>
-              </ul>
-            </div>
+          <div className="bg-white shadow-lg rounded-lg p-8 border border-gray-100">
+            <h2 className="text-3xl font-semibold text-gray-900 mb-6">Akademik Eğitim</h2>
+            <ul className="space-y-6">
+              <li className="border-l-4 border-blue-600 pl-6 py-2">
+                <div className="font-semibold text-xl">İstanbul Üniversitesi, Diş Hekimliği Fakültesi</div>
+                <div className="text-gray-600 text-lg">Pedodonti Anabilim Dalı, Doktora</div>
+                <div className="text-gray-500">Devam Ediyor</div>
+              </li>
+              <li className="border-l-4 border-blue-600 pl-6 py-2">
+                <div className="font-semibold text-xl">İstanbul Üniversitesi, Sağlık Kurumları İşletmeciliği</div>
+                <div className="text-gray-600 text-lg">Lisans Derecesi</div>
+                <div className="text-gray-500">Tamamlandı</div>
+              </li>
+              <li className="border-l-4 border-blue-600 pl-6 py-2">
+                <div className="font-semibold text-xl">İstanbul Üniversitesi, Diş Hekimliği Fakültesi</div>
+                <div className="text-gray-600 text-lg">Lisans Derecesi (Onur Derecesi ile Mezun)</div>
+                <div className="text-gray-500">Tamamlandı</div>
+              </li>
+              <li className="border-l-4 border-blue-600 pl-6 py-2">
+                <div className="font-semibold text-xl">İstanbul Ümraniye Lisesi</div>
+                <div className="text-gray-500">Tamamlandı</div>
+              </li>
+              <li className="border-l-4 border-blue-600 pl-6 py-2">
+                <div className="font-semibold text-xl">İstanbul Altunizade Hafize Özal İlkokulu</div>
+                <div className="text-gray-500">Tamamlandı</div>
+              </li>
+            </ul>
           </div>
         </div>
         
