@@ -47,9 +47,17 @@ export default function OzgecmisPage() {
                     </li>
                     <li className="flex items-center">
                       <svg className="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M12 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                        <circle cx="4" cy="4" r="2" strokeWidth="2"></circle>
                       </svg>
-                      <span className="text-lg">@dr.omer.ozdemir</span>
+                      <a href="https://www.linkedin.com/in/omertarikozdemir/" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:underline">linkedin.com/in/omerozdemir</a>
+                    </li>
+                    <li className="flex items-center">
+                      <svg className="w-6 h-6 mr-3 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" strokeWidth="2"></rect>
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                      </svg>
+                      <a href="https://www.instagram.com/omertarikozdemir" target="_blank" rel="noopener noreferrer" className="text-lg text-blue-600 hover:underline">@omertarikozdemir</a>
                     </li>
                   </ul>
                 </div>

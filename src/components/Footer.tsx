@@ -26,8 +26,8 @@ const Footer = () => {
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Çalışma Saatleri</h3>
-            <p className="mb-2">Pazartesi - Cuma: 09:00 - 18:00</p>
-            <p className="mb-2">Cumartesi: 09:00 - 16:00</p>
+            <p className="mb-2">Pazartesi - Cuma: 10:00 - 18:00</p>
+            <p className="mb-2">Cumartesi: 10:00 - 17:00</p>
             <p>Pazar: Kapalı</p>
           </div>
         </div>

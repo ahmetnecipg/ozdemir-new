@@ -54,7 +54,7 @@ export default function ContactPage() {
                 </div>
                 <div className="ml-4">
                   <h3 className="text-lg font-semibold text-gray-900">Çalışma Saatleri</h3>
-                  <p className="text-gray-600">Pazartesi - Cuma: 09:00 - 18:00<br />Cumartesi: 09:00 - 16:00<br />Pazar: Kapalı</p>
+                  <p className="text-gray-600">Pazartesi - Cuma: 10:00 - 18:00<br />Cumartesi: 10:00 - 17:00<br />Pazar: Kapalı</p>
                 </div>
               </div>
               <div className="flex items-start">
