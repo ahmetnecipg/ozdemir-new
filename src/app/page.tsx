@@ -38,7 +38,7 @@ export default function Home() {
                 />
               </div>
               <div className="p-8 md:w-1/2 md:p-10">
-                <h2 className="text-3xl font-bold text-teal-600 mb-6">Merhaba, Ben Dr. Ömer!</h2>
+                <h2 className="text-3xl font-bold text-teal-600 mb-6">Merhaba, Ben Dt. Ömer!</h2>
                 <p className="text-lg text-gray-700 mb-4 leading-relaxed">
                   Çocukların sağlıklı ve mutlu gülümsemeleri için çalışan bir çocuk diş hekimiyim. Diş tedavisini korkulan bir şey değil, eğlenceli bir deneyime dönüştürmek en sevdiğim şey!
                 </p>
